@@ -1,0 +1,42 @@
+﻿using Abstracciones.Interfaces.Reglas;
+using Abstracciones.Interfaces.Servicios;
+using Abstracciones.Modelos.Servicios.Revision;
+
+
+namespace Reglas
+{
+    public class RevisionReglas : IRevisionReglas
+    {
+        private readonly IRevisionServicio _revisionServicio;
+        private readonly IConfiguracion _configuracion;
+
+        public RevisionReglas(IRevisionServicio revisionServicio, IConfiguracion configuracion)
+        {
+            _revisionServicio = revisionServicio;
+            _configuracion = configuracion;
+        }
+
+        public async Task<bool> RevisonEsValida(string placa)
+        {
+            var resultadoRevision = await _revisionServicio.Obtener(placa);
+            if (ValidarEstado(resultadoRevision) && ValidarPeriodo(resultadoRevision.Periodo))
+                return true;
+            return false;
+        }
+        private bool ValidarEstado(Revision resultadoRevison)
+        {
+            string estadoRevision = _configuracion.ObtenerValor("EstadoRevisionSatifactorio");
+            return resultadoRevison.Resultado == estadoRevision;
+        }
+        private static string ObtenerPeriodoActuaI()
+        {
+            return $"{DateTime.Now.Month}-{DateTime.Now.Year}";
+        }
+        private static bool ValidarPeriodo(string periodo)
+        {
+            var periodoActual = ObtenerPeriodoActuaI();
+            return periodo == periodoActual;
+        }
+    }
+}
+

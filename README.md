@@ -1,31 +1,35 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/pK2qbK-6)
-# Práctica Programada #3: Código de los videos semana 5 y 6
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/QJ6Ov9y4)
+# Práctica programada #2: Código de los videos semana 2, 3 y 4
 
-**Semana de entrega**: 10
-**Rubro**: Práctica programada 03
-**Valor**: 4%
-**Tiempo estimado**: 120 minutos
+**Semana de entrega**: 7  
+**Fecha de entrega**: 25 de febrero, 2026  
+**Rubro**: Práctica programada 02  
+**Valor**: 4%  
+**Tiempo estimado**: 120 minutos  
 **Modalidad**: Extraclase
 
-> 📊 Esta práctica representa el **100%** de la Práctica programada 03
+> 📊 Esta práctica representa el **100%** de la Práctica programada 02
 
 ## Indicaciones
 
 Implementar el código fuente correspondiente a los videos:
-- Semana 05
-  - Semana 5_1_Reglas y Servicios
-- Semana 06
-  - Razor-Index
-  - Razor-Detalle
-  - Razor-Agregar
-  - Razor-Editar
-  - Razor-Eliminar
+- Semana 02
+  - Semana 2_1_BaseDatos y conceptos
+  - Semana 2_2_Estructura
+- Semana 03
+  - Semana 3_1_Estructura
+- Semana 04
+  - Semana 4_1_Route y parametros
+  - Semana 4_2_Validaciones modelos
+  - Semana 4_3_Validaciones controllers
 
 ## 💡 Recomendación
 
-Se recomienda **copiar el código realizado en la Práctica Programada 2** como punto de partida y continuar con la implementación de los videos de las semanas 5 y 6.
+Se recomienda **copiar el código realizado en la Práctica Programada 1** como punto de partida y continuar con la implementación de los videos de la semana 4.
 
 ## Entregables
 
 1. **Código fuente completo** del proyecto y compilando sin errores
 2. Código subido a este repositorio
+
+---
